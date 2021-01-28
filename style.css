@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;0,800;1,400&display=swap");
+
+body {
+  font-family: "Bodoni Moda", serif;
+  padding: 100px;
+}
+
+h1.bank-title {
+  color: rgb(25, 25, 43);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.submit-area {
+  margin-top: 50px;
+  padding: 50px;
+  box-shadow: 10px 10px 10px rgba(24, 24, 155, 0.699);
+}
+
+/*-- transaction area */
+#transaction-area {
+  background-color: rgba(50, 50, 110, 0.527);
+  border: 1px solid;
+  padding: 50px;
+  display: none;
+}
+
+.deposit {
+  background-color: tomato;
+}
+.withdraw {
+  background-color: violet;
+}
+.balance {
+  background-color: wheat;
+}
+.status {
+  text-align: center;
+  border: 1px solid blue;
+  color: rgb(34, 24, 24);
+  padding: 10px;
+  text-transform: uppercase;
+}
+.status + .status {
+  margin-right: 20px;
+}

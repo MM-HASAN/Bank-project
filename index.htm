@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Farmers: money deposit </title>
+
+  <!--css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!--loging-->
+    <div id="login-area">
+      <h1 class="text-center bank-title"> This is farmers deposit money system </h1>
+      <div class="submit-area">
+        <h4>login:</h4>
+        <input type="text" class="form-control" placeholder="your email">
+        <br>
+        <input type="password" class="form-control" placeholder="your password">
+        <br>
+        <button id="login" class="btn btn-success">text</button>
+      </div>
+    </div>
+    <!--end loging-->
+
+    <div id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposit status">
+            <!--deposit-->
+            <h5>Deposit</h5>
+            <h2> <span id="current_deposit">100.00</span> </h2>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw status">
+            <!--widthdraw-->
+            <h5>withdraw</h5>
+            <h2> 00 </h2>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <!--balance-->
+          <div class="balance status">
+            <h5>balance</h5>
+            <h2> <span id="current_balance"> 1240 </span> </h2>
+          </div>
+        </div>
+      </div>
+
+      <!--depost area -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="submit-area">
+            <div class="h4"> Deposit</div>
+            <input id="deposit-amount" type="text" class="form-control" placeholder="Yor deposit amount ">
+            <button id="addDeposit" class="btn btn-primary">deposit</button>
+          </div>
+        </div>
+
+        <!--widthdraw area -->
+        <div class="col-md-6">
+          <div class="submit-area">
+            <div class="h4"> withdraw</div>
+            <input id="withraAmount" type="text" class="form-control" placeholder="your withdraw amount">
+            <button class="btn btn-primary">withdraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bank.js"></script>
+</body>
+
+</html>
